@@ -1,6 +1,8 @@
 # MDX Deck + Code Surfer template
 
-This project was generated with the `npm init code-surfer-deck` command.
+This project was generated with the `npm init code-surfer-deck` command for Lean Mind decks.
+
+![Example preview](docs/example.png)
 
 ## Development
 
