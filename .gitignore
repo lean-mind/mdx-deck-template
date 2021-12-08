@@ -1,2 +1,6 @@
 dist
 node_modules
+
+# IDE metada
+.vscode
+.idea
