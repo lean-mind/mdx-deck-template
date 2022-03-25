@@ -1,10 +1,7 @@
-import {
-  CodeSurfer,
-  CodeSurferColumns,
-  Step,
-} from "code-surfer";
-import { nightOwl } from "@code-surfer/themes";
-import {Logo} from './components'
+import { CodeSurfer } from "code-surfer";
+import { Split } from 'mdx-deck'
+import { Footer, Layout, ProfileImage, Row } from './components'
+import mocha from './assets/mocha.jpg'
 
 
 
@@ -12,11 +9,53 @@ import {Logo} from './components'
 
 Estás usando [MDX Deck](https://github.com/jxnblk/mdx-deck) y [Code Surfer](https://codesurfer.pomb.us)
 
-<Logo/>
+<Footer/>
 
 ---
 
-<CodeSurfer theme={nightOwl}>
+<Split style={{textAlign: 'center', width: '80%'}}>
+
+  <ProfileImage
+    src={mocha}
+    alt="Foto de Mocha"
+  />
+
+  ## Mocha
+
+  Hace cosas en Lean Mind
+
+</Split>
+
+<Footer/>
+
+---
+
+Fila espaciada
+
+<Row>
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+</Row>
+
+<Footer/>
+
+
+---
+
+Fila centrada
+
+<Row alignCenter>
+  <span>1</span>
+  <span>2</span>
+  <span>3</span>
+</Row>
+
+<Footer/>
+
+---
+
+<CodeSurfer>
 
 
 ```js showNumbers
@@ -36,14 +75,18 @@ console.log(3);
 
 </CodeSurfer>
 
-<Logo/>
+<Footer/>
 
 ---
- 
-# Documentación
 
-- [Componentes de MDX Deck](https://github.com/jxnblk/mdx-deck/blob/73b90eb9a353d300cc9e5ddf3070bb6868298275/docs/components.md)
-- [Layout de MDX Deck](https://github.com/jxnblk/mdx-deck/blob/73b90eb9a353d300cc9e5ddf3070bb6868298275/docs/layouts.md)
-- [Code Surfer](https://codesurfer.pomb.us)
+<Layout>
 
-<Logo/>
+  # Documentación
+
+  - [Componentes de MDX Deck](https://github.com/jxnblk/mdx-deck/blob/73b90eb9a353d300cc9e5ddf3070bb6868298275/docs/components.md)
+  - [Layout de MDX Deck](https://github.com/jxnblk/mdx-deck/blob/73b90eb9a353d300cc9e5ddf3070bb6868298275/docs/layouts.md)
+  - [Code Surfer](https://codesurfer.pomb.us)
+
+</Layout>
+
+<Footer/>
